@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gothic Love Terminal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Spider Decorations Background -->
+        <div class="spider-decorations">
+            <!-- Animated Spider Web SVGs -->
+            <div class="web-pattern web-1">
+                <svg viewBox="0 0 200 200" class="web-svg">
+                    <defs>
+                        <radialGradient id="webGradient1" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#dc2626" stop-opacity="0.6"/>
+                            <stop offset="100%" stop-color="#dc2626" stop-opacity="0.1"/>
+                        </radialGradient>
+                    </defs>
+                    <g stroke="url(#webGradient1)" stroke-width="1" fill="none">
+                        <line x1="100" y1="100" x2="100" y2="20" />
+                        <line x1="100" y1="100" x2="150" y2="50" />
+                        <line x1="100" y1="100" x2="180" y2="100" />
+                        <line x1="100" y1="100" x2="150" y2="150" />
+                        <line x1="100" y1="100" x2="100" y2="180" />
+                        <line x1="100" y1="100" x2="50" y2="150" />
+                        <line x1="100" y1="100" x2="20" y2="100" />
+                        <line x1="100" y1="100" x2="50" y2="50" />
+                    </g>
+                    <g stroke="#dc2626" stroke-width="0.8" fill="none" opacity="0.7">
+                        <circle cx="100" cy="100" r="30" />
+                        <circle cx="100" cy="100" r="50" />
+                        <circle cx="100" cy="100" r="70" />
+                    </g>
+                </svg>
+            </div>
+            
+            <div class="web-pattern web-2">
+                <svg viewBox="0 0 200 200" class="web-svg">
+                    <g stroke="#dc2626" stroke-width="1" fill="none">
+                        <line x1="100" y1="100" x2="100" y2="20" />
+                        <line x1="100" y1="100" x2="150" y2="50" />
+                        <line x1="100" y1="100" x2="180" y2="100" />
+                        <line x1="100" y1="100" x2="150" y2="150" />
+                        <line x1="100" y1="100" x2="100" y2="180" />
+                        <line x1="100" y1="100" x2="50" y2="150" />
+                        <line x1="100" y1="100" x2="20" y2="100" />
+                        <line x1="100" y1="100" x2="50" y2="50" />
+                    </g>
+                    <g stroke="#dc2626" stroke-width="0.8" fill="none" opacity="0.5">
+                        <circle cx="100" cy="100" r="25" />
+                        <circle cx="100" cy="100" r="45" />
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Floating Spiders -->
+            <div class="spider spider-1">🕷️</div>
+            <div class="spider spider-2">🕷️</div>
+            <div class="spider spider-3">🕷️</div>
+            <div class="spider spider-4">🕷️</div>
+
+            <!-- Web Strands -->
+            <div class="web-strand strand-1"></div>
+            <div class="web-strand strand-2"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container">
+            <!-- Terminal Header -->
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <div class="dot dot-1"></div>
+                    <div class="dot dot-2"></div>
+                    <div class="dot dot-3"></div>
+                </div>
+                <span class="terminal-title">Gothic Love Terminal v1.0</span>
+            </div>
+
+            <!-- Terminal Body -->
+            <div class="terminal-body">
+                <!-- Welcome Message -->
+                <div class="welcome-section">
+                    <div class="typewriter-text" id="welcome-text">Welcome to the Gothic Love Terminal...</div>
+                    <div class="instructions" id="instructions" style="display: none;">
+                        <p>Type commands to navigate through the shadows of love.</p>
+                        <p class="commands-list">
+                            Available commands: 
+                            <span class="command">help</span>, 
+                            <span class="command">bugzy</span>, 
+                            <span class="command">missing</span>, 
+                            <span class="command">beautiful</span>, 
+                            <span class="command">nate</span>, 
+                            <span class="command">clear</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Command Output -->
+                <div class="output" id="output"></div>
+
+                <!-- Command Input -->
+                <div class="input-line">
+                    <span class="prompt">❤️ gothic-love ~$</span>
+                    <input type="text" id="command-input" placeholder="Enter command..." autocomplete="off">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Made with 💔 and 🕷️ | Press Enter to execute commands</p>
+        </div>
+    </div>
+
+    <!-- Love Confession Modal -->
+    <div id="love-confession-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <!-- Background Elements -->
+            <div class="confession-bg">
+                <div class="floating-web floating-web-1">
+                    <svg viewBox="0 0 100 100" class="web-svg-small">
+                        <g stroke="#dc2626" stroke-width="0.5" fill="none">
+                            <circle cx="50" cy="50" r="10" />
+                            <circle cx="50" cy="50" r="20" />
+                            <circle cx="50" cy="50" r="30" />
+                            <line x1="50" y1="50" x2="50" y2="20" />
+                            <line x1="50" y1="50" x2="70" y2="35" />
+                            <line x1="50" y1="50" x2="80" y2="50" />
+                            <line x1="50" y1="50" x2="70" y2="65" />
+                            <line x1="50" y1="50" x2="50" y2="80" />
+                            <line x1="50" y1="50" x2="30" y2="65" />
+                            <line x1="50" y1="50" x2="20" y2="50" />
+                            <line x1="50" y1="50" x2="30" y2="35" />
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="floating-hearts">
+                    <div class="heart heart-1">❤️</div>
+                    <div class="heart heart-2">❤️</div>
+                    <div class="heart heart-3">❤️</div>
+                    <div class="heart heart-4">❤️</div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="confession-content">
+                <h1 class="confession-title">Naudia</h1>
+                
+                <div class="confession-text">
+                    <p>My dearest Naudia, though the threads of our love have been severed like spider silk in the wind,</p>
+                    <p>my heart still beats in the rhythm of the 49 songs I composed for you in the shadows of our memories.</p>
+                    <p>Each melody carries a piece of my soul, a whisper of what we once were, what we could have been.</p>
+                    <p class="highlight">I hope that somewhere in the darkness of your nights, you might hear one of these songs, and remember that love, like a spider's web, is delicate but eternal.</p>
+                </div>
+
+                <!-- Interactive Giant Heart -->
+                <div class="giant-heart-container">
+                    <button class="giant-heart" id="giant-heart">❤️</button>
+                </div>
+
+                <!-- Language Toggle Button -->
+                <div class="language-section">
+                    <button class="language-btn" id="language-btn">I Love You</button>
+                    <p class="language-hint">Click to cycle through languages</p>
+                </div>
+
+                <!-- Close Button -->
+                <button class="close-btn" id="close-btn">
+                    <span>✕</span> Return to Terminal
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
